@@ -1,0 +1,26 @@
+@keyframes flickerAnimation {
+  50% {
+    opacity: 0;
+  }
+}
+@-o-keyframes flickerAnimation {
+  50% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes flickerAnimation {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  50% {
+    opacity: 0;
+  }
+}
+.animate-flicker {
+  -webkit-animation: flickerAnimation 1s linear(1-4.81%, 1 10.74%) infinite;
+  -moz-animation: flickerAnimation 1s linear(1-4.81%, 1 10.74%) infinite;
+  -o-animation: flickerAnimation 1s linear(1-4.81%, 1 10.74%) infinite;
+  animation: flickerAnimation 1s linear(1-4.81%, 1 10.74%) infinite;
+}
