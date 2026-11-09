@@ -7,29 +7,17 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
     {
-        quote:"I worked in-house with Lara as part of a Managing Editorial team, and found her to be an accurate and diligent copy-editor and proofreader with excellent digital mark-up skills. I’m looking forward to working with her again as she embarks on her freelance career, which I have no doubt she’ll be well suited to.",
-        name:"Rebecca Needes",
-        jobTitle:"Editorial Manager for Tor",
-        company:"Pan Macmillan",
+        quote:"My disabled brother lived next door to Lara for many years. Over the years his health has deteriorated, and he has needed more help at home. Lara has been amazing at checking in on him and doing odd jobs. She is a happy, kind and totally trustworthy lady. She was always willing to do anything to help us out. We will miss her very much and wish her all the best in her new venture.",
+        name:"Caroline",
+        jobTitle:"Neighbour",
+        company:"",
     },
     {
-        quote:"I had a big piece of editorial work that was fairly urgent, and Lara turned it around very quickly, even returning it before our deadline. I know I can trust Lara to do a great job, so will definitely be sending her some other work soon!",
-        name:"Olivia Robertshaw",
-        jobTitle:"Assistant Editor for HarperFiction",
-        company:"HarperCollins",
+        quote:"I have known Lara for almost 20 years, both professionally and personally. Throughout this time, I have always known her to be honest, trustworthy and someone that you can always rely on. We worked together in a primary school and Lara had excellent communication skills and could interact with people from all ages and from all walks of life, she was well respected by all stakeholders and was highly thought of. I highly recommend Lara and support her new business venture!",
+        name:"Kirsten",
+        jobTitle:"Headteacher",
+        company:"",
     },
-    {
-        quote:"Lara has a brilliant editorial eye. No detail eludes her, no grammatical nuance is missed. She’s my go to freelancer and I can thoroughly recommend her for any edit.",
-        name:"Morgan Springett",
-        jobTitle:"Commissioning Editor for HarperFiction",
-        company:"HarperCollins",
-    },
-    {
-        quote:"Lara is a literary superstar who supported me with editing and submitting the opening chapter of my first novel. I always knew she had a knack for prose, but she suggested some really insightful techniques and approaches to use to help make my writing punchy and impactful moving forward. It is quite a complex and convoluted project, but she really got stuck in and familiarised herself with the world I’m building. I feel very validated in my ideas and I’ll definitely be reaching out to Lara again!",
-        name:"Gina Agnew",
-        jobTitle:"",
-        company:"Independent author",
-    }
 ]
 
 export default testimonials;
