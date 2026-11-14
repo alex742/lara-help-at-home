@@ -58,13 +58,13 @@ function App() {
             <div className="bg-blue pb-0 p-2 md:p-3 custom1200:p-4 custom1200:min-w-[550px] flex items-center justify-center rounded-[10%] rounded-b-none custom1200:rounded-bl-[10%]">
               <img
                 className="max-xs:h-[90px] max-xs:w-[90px] h-[130px] w-[130px] md:h-[250px] md:w-[250px] custom1200:h-[520px] custom1200:w-[520px] rounded-[8%]"
-                src="/profile_pic.webp"
+                src="/profile_pic.jpg"
               />
             </div>
             <div className="flex flex-col justify-end p-l-10 space-y-2 max-xs:mt-[-44px] mt-[-50px] md:mt-[-100px] custom1200:mt-0">
               <Header
                 header="HelloImLara"
-                className="max-xs:w-[150px] w-[180px] md:w-[330px] custom1200:w-[80%] custom1200:min-w-[350px] custom1200:max-w-[500px] max-xs:ml-[115px] ml-[160px] md:ml-[290px] custom1200:ml-[40px] max-xs:mb-[-5px] mb-[-10px] md:mb-[-10px] lg:mb-[-20px]"
+                className="max-xs:w-[150px] w-[180px] md:w-[330px] custom1200:w-[80%] custom1200:min-w-[350px] custom1200:max-w-[500px] max-xs:ml-[115px] ml-[160px] md:ml-[290px] custom1200:ml-[40px] max-xs:mb-[10px] mb-[10px] md:mb-[-10px] lg:mb-[10px]"
               />
               <div className="min-h-[60%] bg-blue p-5 text-smokey-white text-l rounded-[20px] rounded-tl-none custom1200:rounded-bl-none custom1200:rounded-tl-none">
                 {aboutMe}
@@ -86,7 +86,7 @@ function App() {
             <div className="mt-5 p-8 lg:h-[460px] lg:max-w-[9000px] flex flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-left flex-col justify-center rounded-[40px]">
               {serviceContent}
             </div>
-            <div className="mt-5 p-8 lg:h-[460px] lg:max-w-[9000px] flex flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-center flex-col gap-5 rounded-[40px]">
+            <div className="-mt-10 lg:mt-5 p-8 lg:h-[460px] lg:max-w-[9000px] flex justify-evenly flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-center flex-col gap-5 rounded-[40px]">
               <div className="flex items-center gap-2">
                 {Check("h-[24px] w-[24px] lg:h-[50px] lg:w-[50px]")}
                 <span>Fully insured</span>
@@ -126,16 +126,14 @@ function App() {
                 <div className="flex flex-col flex-1 items-center justify-center">
                   <img
                     className="w-[70%] max-h-[245px] max-w-[245px] rounded-[8%]"
-                    src="/profile_pic_2.webp"
+                    src="/profile_pic_2.jpg"
                   />
                 </div>
               )}
             </div>
             <div className="md:w-full md:mr-[-30%] lg:mr-[0%] max-xs:ml-0 ml-5 lg:ml-0 space-y-4 md:mt-0 max-xs:text-base text-lg md:text-lg lg:text-2xl text-smokey-white">
               <p className="w-[80%]">
-                I’d love to hear from you! Get in touch{" "}
-                {/* {(isTablet || isDesktop) && <br />} */}
-                using one of the below:
+                I’d love to hear from you! Get in touch using one of the below:
               </p>
               <ExternalLink
                 text="lara.helpathome@outlook.com"
@@ -163,8 +161,8 @@ function App() {
           {(isTablet || isDesktop) && (
             <div className="flex flex-col flex-1 items-center mt-[30px] md:mt-[80px] md:ml-[-10%] lg:ml-3">
               <img
-                className="md:ml-10 lg:ml-5  h-[140px] min-w-[140px] md:h-[250px] md:min-w-[250px] lg:h-[370px] lg:min-w-[370px] rounded-[8%]"
-                src="/profile_pic_2.webp"
+                className="md:ml-10  h-[140px] min-w-[140px] md:h-[250px] md:min-w-[250px] lg:h-[370px] lg:min-w-[370px] rounded-[8%]"
+                src="/profile_pic_2.jpg"
               />
 
               <div className="mt-1 lg:mt-3 text-smokey-white text-base md:text-lg lg:text-2xl italic z-1">
@@ -181,7 +179,7 @@ function App() {
         >
           <Header
             header="DontTakeMyWord"
-            className="max-w-[700px] w-[80%] md:w-[60%] lg:w-[40%] mb-[-5px] md:mb-[-10px]"
+            className="max-w-[700px] w-[80%] md:w-[60%] lg:w-[40%] mb-[5px]"
           />
           <div className="w-full max-xs:py-[20px] py-[13px] md:pt-[20px] lg:py-[25px] bg-blue flex items-center justify-center">
             <Carousel
