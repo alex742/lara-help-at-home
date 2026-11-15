@@ -64,7 +64,7 @@ function App() {
             <div className="flex flex-col justify-end p-l-10 space-y-2 max-xs:mt-[-44px] mt-[-50px] md:mt-[-100px] custom1200:mt-0">
               <Header
                 header="HelloImLara"
-                className="max-xs:w-[150px] w-[180px] md:w-[330px] custom1200:w-[80%] custom1200:min-w-[350px] custom1200:max-w-[500px] max-xs:ml-[115px] ml-[160px] md:ml-[290px] custom1200:ml-[40px] max-xs:mb-[10px] mb-[10px] md:mb-[-10px] lg:mb-[10px]"
+                className="max-xs:w-[150px] w-[180px] md:w-[330px] custom1200:w-[80%] custom1200:min-w-[350px] custom1200:max-w-[500px] max-xs:ml-[115px] ml-[160px] md:ml-[290px] custom1200:ml-[40px] max-xs:mb-[10px] mb-[10px]"
               />
               <div className="min-h-[60%] bg-blue p-5 text-smokey-white text-l rounded-[20px] rounded-tl-none custom1200:rounded-bl-none custom1200:rounded-tl-none">
                 {aboutMe}
