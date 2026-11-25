@@ -91,7 +91,7 @@ function App() {
               <Logo className="h-[300px]" />
             </div>
           </div>
-          <div className="flex items-center justify-center gap-5">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-5">
             <div className="flex items-center gap-2">
               {Check("h-[24px] w-[24px]")}
               <span>Fully insured</span>
