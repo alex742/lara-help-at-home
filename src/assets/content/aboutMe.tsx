@@ -7,7 +7,7 @@ export const aboutMe = (
     </div>
     <br />
     <div>
-      Through Help at Home, I provide friendly, flexible suport across
+      Through Help at Home, I provide friendly, flexible support across
       Kingsbridge and the surrounding area, to help you maintain your
       independence and enjoy life on your own terms.
     </div>

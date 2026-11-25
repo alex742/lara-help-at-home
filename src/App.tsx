@@ -20,6 +20,7 @@ import { serviceContent } from "./assets/content/services";
 import { aboutMe } from "./assets/content/aboutMe";
 import "./App.css";
 import testimonials from "./assets/content/testimonials";
+import Logo from "./assets/Logo";
 
 function App() {
   const { breakpoint } = useBreakpoint({
@@ -52,19 +53,19 @@ function App() {
       <div className="bg-teal w-full flex justify-center">
         <div
           id="aboutMe"
-          className="bg-teal p-5 md:p-10 custom1200:p-15 custom1200:min-h-[770px] w-full max-w-[1200px] flex items-center"
+          className="bg-teal pt-5 py-0 px-5 custom1200:min-h-[770px] w-full max-w-[1200px] flex items-center"
         >
           <div className="flex items-baseline custom1200:items-end justify-center flex-col custom1200:flex-row">
-            <div className="bg-blue pb-0 p-2 md:p-3 custom1200:p-4 custom1200:min-w-[550px] flex items-center justify-center rounded-[10%] rounded-b-none custom1200:rounded-bl-[10%]">
+            <div className="bg-blue p-2 md:p-3 custom1200:p-4 custom1200:min-w-[550px] flex items-center justify-center rounded-[10%] rounded-b-none custom1200:rounded-bl-[10%]">
               <img
                 className="max-xs:h-[90px] max-xs:w-[90px] h-[130px] w-[130px] md:h-[250px] md:w-[250px] custom1200:h-[520px] custom1200:w-[520px] rounded-[8%]"
                 src="/profile_pic.jpg"
               />
             </div>
-            <div className="flex flex-col justify-end p-l-10 space-y-2 max-xs:mt-[-44px] mt-[-50px] md:mt-[-100px] custom1200:mt-0">
+            <div className="flex flex-col justify-end p-l-10 space-y-2 max-xs:mt-[-44px] mt-[-50px] md:mt-[-85px] custom1200:mt-0">
               <Header
                 header="HelloImLara"
-                className="max-xs:w-[150px] w-[180px] md:w-[330px] custom1200:w-[80%] custom1200:min-w-[350px] custom1200:max-w-[500px] max-xs:ml-[115px] ml-[160px] md:ml-[290px] custom1200:ml-[40px] max-xs:mb-[10px] mb-[10px]"
+                className="max-xs:w-[150px] w-[180px] md:w-[330px] custom1200:w-[70%] custom1200:min-w-[350px] custom1200:max-w-[500px] max-xs:ml-[115px] ml-[160px] md:ml-[290px] custom1200:ml-[20px] max-xs:mb-[10px] mb-[10px] custom1200:mb-[15px]"
               />
               <div className="min-h-[60%] bg-blue p-5 text-smokey-white text-l rounded-[20px] rounded-tl-none custom1200:rounded-bl-none custom1200:rounded-tl-none">
                 {aboutMe}
@@ -76,37 +77,37 @@ function App() {
       <div className="bg-green w-full flex justify-center">
         <div
           id="services"
-          className="bg-green p-5 md:p-10 lg:p-10 w-full lg:min-h-[770px] max-w-[1200px] flex flex-col justify-center"
+          className="bg-green py-0 mb-15 px-5 w-full max-w-[1200px] flex flex-col justify-start"
         >
-          <Header
-            header="WhatCanIDoForYou"
-            className="w-[70%] max-w-[400px] md:max-w-[550px] lg:w-[50%] min-h-[200px] max-xs:mb-[-60px] max-xs:mt-[-50px] mb-[-60px] mt-[-40px] md:mb-[-30px] md:mt-[-20px] lg:mb-[-70px]"
-          />
           <div className="flex flex-col lg:flex-row lg:items-center">
-            <div className="mt-5 p-8 lg:h-[460px] lg:max-w-[9000px] flex flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-left flex-col justify-center rounded-[40px]">
+            <div className="p-8 lg:h-[460px] lg:max-w-[9000px] flex flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-left flex-col justify-center rounded-[40px]">
+              <Header
+                header="WhatCanIDoForYou"
+                className="max-w-[400px] md:max-w-[550px] -mt-10"
+              />
               {serviceContent}
             </div>
-            <div className="-mt-10 lg:mt-5 p-8 lg:h-[460px] lg:max-w-[9000px] flex justify-evenly flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-center flex-col gap-5 rounded-[40px]">
-              <div className="flex items-center gap-2">
-                {Check("h-[24px] w-[24px] lg:h-[50px] lg:w-[50px]")}
-                <span>Fully insured</span>
-              </div>
-              <div className="flex items-center gap-2">
-                {Check("h-[24px] w-[24px] lg:h-[50px] lg:w-[50px]")}{" "}
-                <span>DBS checked</span>
-              </div>
-              <div className="flex items-center gap-2">
-                {Check("h-[24px] w-[24px] lg:h-[50px] lg:w-[50px]")}{" "}
-                <span>Safeguarding trained</span>
-              </div>
-              <div className="flex items-center gap-2">
-                {Check("h-[24px] w-[24px] lg:h-[50px] lg:w-[50px]")}{" "}
-                <span>Great testimonials</span>
-              </div>
-              <div className="flex items-center gap-2">
-                {Check("h-[24px] w-[24px] lg:h-[50px] lg:w-[50px]")}{" "}
-                <span>A micro provider you can trust</span>
-              </div>
+            <div className="-mt-10 px-8 lg:h-[460px] lg:max-w-[9000px] flex justify-evenly flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-center flex-col gap-5 rounded-[40px]">
+              <Logo className="h-[300px]" />
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-5">
+            <div className="flex items-center gap-2">
+              {Check("h-[24px] w-[24px]")}
+              <span>Fully insured</span>
+            </div>
+            <div className="flex items-center gap-2">
+              {Check("h-[24px] w-[24px]")} <span>DBS checked</span>
+            </div>
+            <div className="flex items-center gap-2">
+              {Check("h-[24px] w-[24px]")} <span>Safeguarding trained</span>
+            </div>
+            <div className="flex items-center gap-2">
+              {Check("h-[24px] w-[24px]")} <span>Great testimonials</span>
+            </div>
+            <div className="flex items-center gap-2">
+              {Check("h-[24px] w-[24px]")}{" "}
+              <span>A microprovider you can trust</span>
             </div>
           </div>
         </div>
@@ -114,7 +115,7 @@ function App() {
       <div className="bg-teal w-full flex justify-center">
         <div
           id="contact"
-          className="bg-teal p-5 md:p-8 lg:p-25 lg:min-h-[770px] w-full md:max-w-[800px] max-w-[1200px] flex flex-col md:flex-row items-center justify-center"
+          className="bg-teal py-0 mb-15 px-5 w-full md:max-w-[800px] max-w-[1200px] flex flex-col md:flex-row items-center justify-start"
         >
           <div className="w-full mt-5 lg:mt-0 flex flex-col items-center flex-1 z-1">
             <div className="w-full flex flex-2 lg:flex-0 md:justify-start mb-[20px] lg:mb-[50px] md:mr-[-30%] lg:mr-0">

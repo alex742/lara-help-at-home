@@ -5,8 +5,8 @@ const WhatCanIDoForYou = ({ className }: { className?: string }) => (
     zoomAndPan="magnify"
     preserveAspectRatio="xMidYMid meet"
     version="1.0"
-    viewBox="10.38 16.03 315.31 38.38"
     className={className}
+    viewBox="10.38 16.03 315.31 38.38"
   >
     <defs>
       <g></g>
