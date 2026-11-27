@@ -117,7 +117,7 @@ function App() {
       <div className="bg-teal w-full flex justify-center">
         <div
           id="contact"
-          className="bg-teal py-0 lg:mt-10 lg:mb-15 px-5 w-full md:max-w-[800px] max-w-[1200px] flex flex-col md:flex-row items-center justify-start"
+          className="bg-teal py-0 lg:mt-0 lg:mb-15 px-5 w-full md:max-w-[800px] max-w-[1200px] flex flex-col md:flex-row items-center justify-start"
         >
           <div className="w-full mt-5 lg:mt-0 flex flex-col items-center flex-1 z-1">
             <div className="w-full flex flex-2 lg:flex-0 md:justify-start mb-[20px] lg:mb-[50px] md:mr-[-30%] lg:mr-0">

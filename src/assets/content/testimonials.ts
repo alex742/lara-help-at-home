@@ -18,6 +18,12 @@ const testimonials: Testimonial[] = [
         jobTitle:"Headteacher",
         company:"",
     },
+    {
+        quote:"Having worked with Lara for a couple of years I can say she is one amazing lady. Friendly, a great sense of humour and fun to be around. A great listener when I had some health issues, remaining upbeat and positive, showing great compassion and understanding. She's a whiz too with computer basics and phones. I highly recommend Lara.",
+        name:"Paul",
+        jobTitle:"Ex-colleague",
+        company:"",
+    },
 ]
 
 export default testimonials;
