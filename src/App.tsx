@@ -77,21 +77,23 @@ function App() {
       <div className="bg-green w-full flex justify-center">
         <div
           id="services"
-          className="bg-green py-0 mb-15 px-5 w-full max-w-[1200px] flex flex-col justify-start"
+          className="bg-green py-0 mt-15 custom1200:mt-0 mb-15 px-5 w-full max-w-[1200px] flex flex-col justify-start"
         >
           <div className="flex flex-col lg:flex-row lg:items-center">
-            <div className="p-8 lg:h-[460px] lg:max-w-[9000px] flex flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-left flex-col justify-center rounded-[40px]">
+            <div className="p-8 lg:max-w-[900px] flex flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-left flex-col rounded-[40px]">
               <Header
                 header="WhatCanIDoForYou"
-                className="max-w-[400px] md:max-w-[550px] -mt-10"
+                className="max-w-[400px] md:max-w-[550px] -mt-10 mb-5"
               />
               {serviceContent}
             </div>
-            <div className="-mt-10 px-8 lg:h-[460px] lg:max-w-[9000px] flex justify-evenly flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-center flex-col gap-5 rounded-[40px]">
-              <Logo className="h-[300px]" />
-            </div>
+            {isDesktop && (
+              <div className="mt-0 mb-10 lg:mb-0 lg:-mt-10 px-8 lg:max-w-[900px] flex justify-evenly flex-2 bg-teal max-xs:text-sm text-base md:text-lg lg:text-lg text-smokey-white text-center flex-col gap-5 rounded-[40px]">
+                <Logo className="h-[150px] lg:h-[300px]" />
+              </div>
+            )}
           </div>
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-5">
+          <div className="flex flex-col px-8 md:p-0 md:flex-row md:items-center md:justify-center gap-5">
             <div className="flex items-center gap-2">
               {Check("h-[24px] w-[24px]")}
               <span>Fully insured</span>
@@ -115,7 +117,7 @@ function App() {
       <div className="bg-teal w-full flex justify-center">
         <div
           id="contact"
-          className="bg-teal py-0 mb-15 px-5 w-full md:max-w-[800px] max-w-[1200px] flex flex-col md:flex-row items-center justify-start"
+          className="bg-teal py-0 lg:mt-10 lg:mb-15 px-5 w-full md:max-w-[800px] max-w-[1200px] flex flex-col md:flex-row items-center justify-start"
         >
           <div className="w-full mt-5 lg:mt-0 flex flex-col items-center flex-1 z-1">
             <div className="w-full flex flex-2 lg:flex-0 md:justify-start mb-[20px] lg:mb-[50px] md:mr-[-30%] lg:mr-0">
@@ -132,8 +134,8 @@ function App() {
                 </div>
               )}
             </div>
-            <div className="md:w-full md:mr-[-30%] lg:mr-[0%] max-xs:ml-0 ml-5 lg:ml-0 space-y-4 md:mt-0 max-xs:text-base text-lg md:text-lg lg:text-2xl text-smokey-white">
-              <p className="w-[80%]">
+            <div className="md:w-full lg:mr-[0%] max-xs:ml-0 ml-5 lg:ml-0 space-y-4 md:mt-0 max-xs:text-base text-lg md:text-lg lg:text-2xl text-smokey-white">
+              <p>
                 I’d love to hear from you! Get in touch using one of the below:
               </p>
               <ExternalLink
@@ -176,7 +178,7 @@ function App() {
       <div className="bg-teal w-full flex justify-center">
         <div
           id="testimonials"
-          className="bg-teal pb-[40px] lg:pb-0 pt-[20px] md:pt-[50px] lg:pt-[10px] lg:mb-[100px] lg:h-fit w-full flex flex-col items-center"
+          className="bg-teal mt-10 pb-[40px] lg:pb-0 pt-[20px] md:pt-[50px] lg:pt-[10px] lg:mb-[100px] lg:h-fit w-full flex flex-col items-center"
         >
           <Header
             header="DontTakeMyWord"
