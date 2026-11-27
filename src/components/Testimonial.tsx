@@ -19,7 +19,7 @@ const Testimonial = ({
     </h2>
     {isMobile && (
       <p className="text-green font-normal text-base md:text-lg lg:text-xl/5 italic">
-        {name}, {company}
+        {name}, {jobTitle}
       </p>
     )}
     {!isMobile && (
